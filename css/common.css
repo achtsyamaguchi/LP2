@@ -1,0 +1,785 @@
+@charset"utf-8";
+
+html {
+  font-size: 62.5%;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section_title  {
+  font-size: clamp(2rem, 3vw , 4rem);
+  font-weight: bold;
+  border: 3px solid rgba(253, 15, 15, 0.92);
+  border-radius: 20px;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 1.6% 4%;
+  margin-bottom: 8%;
+}
+
+header  {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+
+.header_inner {
+  height: 10.5rem;
+  font-size: clamp(2rem, 3.5vw,3rem);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffd80d;
+  padding: 0 8%
+}
+
+.header_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_nav ul {
+  display: flex;
+}
+
+.header_nav ul li {
+  margin-left: 2.2rem;
+}
+
+.header_logo::after {
+  content:"" ;
+  display: inline-block;
+  width: 40px;
+  height: 35px;
+  background-image: url(../img/kuma-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat    ;
+  vertical-align: middle;
+}
+
+
+
+/* main----------------------------- */
+.main_page {
+
+}
+.main_title {
+  text-align: center;
+  padding-top: 16rem;
+}
+
+.main_title h1 {
+  font-size: clamp(2.5rem,4vw,6rem);
+  line-height: 1.3;
+  margin-bottom: 7%;
+  display: inline-block;
+  text-align: left;
+}
+
+.main_title::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/kuma-main.png);
+  background-repeat: no-repeat;
+  width: 12rem;
+  height: 11rem;
+  background-size: contain;
+  vertical-align: top;
+  
+}
+
+.main_inner {
+  display: flex;
+  justify-content: center;
+}
+
+.main_visual {
+  width: 41%;
+  height: 39%;
+}
+
+.main_visual img {
+  width: 100%;
+  height: 100%;
+  
+  object-fit: cover;
+}
+
+.main_txt h2 {
+  font-size: clamp(1.6rem, 2.5vw,3.5rem);
+  font-weight: bold;
+  line-height: 1.4; 
+  margin-bottom: 11.5rem;
+}
+
+.main_txt p {
+  font-size: clamp(1.6rem,1.8vw,2.5rem);
+  font-weight: bold;
+  line-height: 2;
+  margin-left: 6rem;
+}
+
+.main_page {
+  position: relative;
+  margin-top: 10.5rem;
+  margin-bottom: 8rem;
+}
+
+.main_page::before,
+.main_page::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.main_page::before {
+  top : 0;
+  left: 0;
+  border-top: 20rem solid #0e7af8;
+  border-left: 20rem solid #0e7af8;
+  border-bottom: 20rem solid rgba(0 0 0 / 0);
+  border-right: 20rem solid rgba(0 0 0 / 0);
+}
+
+/* --TB切り替え用---------------------------- */
+.tb_wrapper {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+  margin-top: 10.5rem;
+  padding-top: 16%;
+}
+
+.tb_wrapper .tb_sub_title {
+  font-size: clamp(2rem,4vw,3rem);
+  margin-bottom: 8rem;
+  text-align: left;
+  
+}
+
+.tb_wrapper .tb_sub_title::before {
+  content: "";
+  display: inline-block;
+  background-image: url(../img/kuma-main.png);
+  width: 10.5rem;
+  height: 9.5rem;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+
+.tb_wrapper .tb_title {
+  font-size: clamp(2.5rem,5vw,5rem);
+  border: 3px solid #0E7AF8;
+  border-radius: 2rem;
+  padding: 4.7rem 10rem;
+  margin-bottom: 29%;
+  line-height: 1.2;
+  display: inline-block;
+}
+
+/* --explanation------------------------------ */
+
+#explanation {
+  margin-bottom: 11rem;
+}
+
+.explanation_inner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 11rem;
+}
+
+.explanation_inner_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.arrow::after {
+content: "";
+display: inline-block;
+background-image: url(../img/矢印1.png);
+height: 10.7rem;
+width: 8rem;
+background-repeat: no-repeat;
+background-size: contain;
+}
+
+.explanation_inner_item p {
+  font-size: clamp(1.6rem,3vw,3rem);
+  font-weight: bold;
+  display: inline-block;
+  text-align: left;
+}
+
+.explanation_inner_item_box {
+  text-align: center;
+}
+
+.explanation_inner_img1 {
+  width: 92%;
+  height: auto ;
+  margin-bottom: 3rem;
+}
+
+.explanation_inner_img2 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;    
+}
+
+.explanation_inner_img3 {
+  width: 100%;
+  margin-bottom: 2.5rem;
+  height: auto;
+}
+
+.explanation_ul li {
+  font-size: clamp(1.6rem,1.8vw,2.5rem);
+  font-weight: bold;
+  list-style-type: disc;
+  margin-bottom: 3rem;
+}
+
+.explanation_ul {
+  margin: 0 auto;
+  width: fit-content;
+  margin-bottom: 11rem;
+}
+
+/* car_point---------------------------- */
+.car_point_inner {
+  font-size: clamp(1.6rem,3vw,3rem);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.car_point_inner_item1 {
+  margin-right: 9rem;
+  text-align: center;
+}
+
+.car_point_inner_item2 {
+  text-align: center;
+}
+
+.car_point_inner_item1 p,
+.car_point_inner_item2 p {
+  display: inline-block;
+  text-align: left;
+  margin-top: 4rem;
+}
+
+.car_point_txt1 {
+  margin-top: 11rem;
+  font-size: clamp(1.6rem,1.8vw,2.5rem);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  line-height: 2;
+  margin-bottom: 11rem;
+}
+
+.car_point_txt2 {
+  padding: 10rem 18rem;
+  margin: 0 auto;
+  width: fit-content;
+  line-height: 2;
+  border: 3px solid ;
+  filter: drop-shadow(0,4px,4px,0 rgba(0, 0, 0, 0.0.25));
+}
+
+.car_point_txt2 p {
+  font-size: clamp(1.6rem,1.8vw,2.5rem);
+  font-weight: bold;
+}
+
+
+/* costomers_voice------------------------- */
+
+.costomers_voice_inner_item1,
+.costomers_voice_inner_item2 {
+  display: flex;
+  justify-content: center;
+}
+
+.costomers_voice_inner_item1 p,
+.costomers_voice_inner_item2 p  {
+  font-size: clamp(1.6rem,1.8vw,2.5rem);
+  font-weight: bold;
+  border: 3px solid #333;
+  border-radius: 2rem;
+  padding: 4rem 2.5rem;
+  height: fit-content;
+}
+
+.costomers_voice_inner_item2 {
+  flex-direction: row-reverse;
+  position: relative;
+  margin-bottom: 14rem;
+}
+
+.costomers_voice_inner_item1 {
+  position: relative;
+  margin-bottom: 10rem;
+}
+
+.costomers_voice_img {
+  width: 18%;
+  height: 22%;
+}
+
+.left {
+  margin-right: 5rem;
+}
+
+.reverse {
+  margin-left: 5rem;
+}
+
+.box1 {
+  position: absolute;
+  bottom: 4%;
+  right: 9%;
+  width: 47%;
+  height: 62%;
+  background-color: rgba(255, 216, 13, 0.5);
+  border-radius: 2rem;
+  z-index: -2;
+}
+
+.box2 {
+  position: absolute;
+  bottom: 20%;
+  left: 8%;
+  width: 47%;
+  height: 46%;
+  background-color: rgba(255, 216, 13, 0.5);
+  border-radius: 2rem;
+  z-index:-2;
+}
+
+/* download----------------------- */
+#download {
+  text-align: center;
+  background-color:#ffd80d;
+  padding-top: 4%;
+  font-size: clamp(1.6rem,2.8vw,4rem) ;
+  font-weight: bold;
+}
+
+
+.download_logo_img {
+  margin-bottom: 1.8rem;
+}
+
+.download_txt {
+  margin-bottom: 6rem;
+}
+
+.download_store {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 6.3rem;
+}
+
+.download_app {
+  margin-right: 29%;
+}
+
+
+
+/* TAB---------------------- */
+@media screen and (max-width: 744px) {
+  .main_title {
+    display: none;
+  }
+
+  .section_title br {
+    display: none;
+  }
+
+  .tb_wrapper {
+    display: block;
+  }
+
+  .header_nav {
+  display: none;
+}
+
+  .header_logo::after {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .main_title::before {
+    width: 10rem;
+    height: 9rem;
+  }
+  span {
+    display: none;
+  }
+
+
+/* --drawer-------------------------- */
+
+  header .drawer {
+    visibility: visible;
+    width: 40px;
+    position: absolute;
+    top: 35%;
+    right: 8%;
+    border-top: solid 3px #333;
+    cursor: pointer;
+    z-index: 100;
+  }
+
+  header .drawer::before,
+  header .drawer::after {
+  content: "";
+  display: block;
+  width: 40px;
+  background: #333;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+}
+
+header .drawer::before {
+  top: 11px;
+}
+
+header .drawer::after {
+  top: 24px;
+}
+
+ header .header_nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background: #fff;
+}
+
+header .header_nav ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem
+}
+
+header .header_nav ul li {
+  margin: 0 auto;
+}
+
+header .header_nav ul li a {
+  line-height: 4;
+  font-size: 2.5rem;
+  display: block;
+}
+
+  /*---×にする  */
+  
+body.nav-open header .drawer {
+  border-top: 0;
+}
+
+body.nav-open header .drawer::before {
+  top: 9px;
+  transform: rotate(-45deg);
+}
+
+body.nav-open header .drawer::after {
+  top: 9px;
+  transform: rotate(45deg);
+}
+
+.main_page::before,
+.main_txt p,
+.arrow::after,
+.explanation_ul,
+.car_point_txt1,
+.box1,.box2{
+  display: none;
+}
+
+
+
+  /*--main-top----------------------------------  */
+
+  .main_txt h2 {
+    margin:unset;
+    line-height: 2;
+  }
+
+  .main_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explanation_inner {
+    display: block;
+  }
+
+  .explanation_inner_img1,
+  .explanation_inner_img2,
+  .explanation_inner_img3{
+  margin-bottom: 23.5%;
+  }
+
+  .explanation_inner_img2,
+  .explanation_inner_img3 {
+    margin-top: 17%;
+  }
+
+  .explanation_inner_item_box p {
+    margin-bottom: 26%;
+  }
+
+  .explanation_inner_item_box p:last-child {
+    margin-bottom: 0;
+  }
+
+  /* car_point---------------------------- */
+.car_point_inner {
+  display: block;
+}
+
+.explanation_inner_img4,
+.explanation_inner_img5 {
+  margin-bottom: 13%;
+}
+
+.car_point_inner_item1 {
+  margin: unset;
+}
+
+.car_point_inner_item1 p,
+.car_point_inner_item2 p {
+  margin-bottom: 13%;
+  margin-top: unset;
+}
+
+.car_point_txt2 {
+  padding: 8% 18%;
+  margin: 0 auto;
+}
+
+.costomers_voice_inner {
+  line-height: 1.5;
+}
+.costomers_voice_img {
+  width: 14%;
+}
+
+.reverse {
+  height: 18%;
+}
+
+.costomers_voice_inner_item2 {
+  flex-direction: row;
+  margin: unset;
+  margin-bottom: 4.5%;
+}
+
+.costomers_voice_inner_item1 p,
+.costomers_voice_inner_item2 p {
+  padding: unset;
+  padding: 6.7% 2.6%
+}
+
+.reverse ,
+.left {
+  margin: unset;
+  margin-right: 2%;
+}
+
+/* download----------------------------------- */
+.download_logo_img {
+  width: 13%;
+  height: 12%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.download_app {
+  margin: unset;
+  margin-right: 7%;
+}
+
+.download_app,
+.download_google {
+  width: 34%;
+}
+
+}
+
+
+
+
+
+/* SP-------------------------------------------------- */
+@media screen and (max-width: 390px) {
+.header_logo::after {
+  width: 4rem;
+  height: 3.5rem;
+}
+
+.main_visual {
+width: 60%;
+}
+
+.section_title br {
+  display: block;
+}
+
+.tb_wrapper .tb_sub_title::before {
+  display: inline-block;
+  width: 7rem;
+  height: 7rem;
+  background-repeat: no-repeat;
+}
+
+.tb_wrapper .tb_sub_title {
+  margin-bottom: 10%;
+}
+
+.tb_wrapper .tb_title {
+  padding:  2.7rem 3.6rem;
+  margin-bottom: 8.5rem;
+}
+
+.main_title::before {
+  width: 7rem;
+  height: 7rem;
+}
+
+/* explanation---------------------------- */
+
+.explanation_inner_img1 {
+  width: 44%;
+  margin: 0  auto;
+  margin-bottom: 2.5rem;
+}
+
+.explanation_inner_img2,
+.explanation_inner_img3 {
+  width: 55%;
+  margin: 2.5rem auto;
+}
+
+.explanation_inner_img4,
+.explanation_inner_img5 {
+  width: 49%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+/* -car_point----------------------- */
+.car_point_txt2 {
+  padding: 3rem 1.8rem;
+  margin-bottom: 7rem;
+}
+
+/* costomers------------------------- */
+.costomers_voice_inner_item1,
+.costomers_voice_inner_item2 {
+  margin-bottom: 0;
+  flex-direction: column;
+}
+
+.costomers_voice_img {
+  width: 23%;
+  margin: 0 auto;
+}
+
+.costomers_voice_inner_item1 p,
+.costomers_voice_inner_item2 p {
+  border: none;
+  width: 58%;
+  margin: 0 auto;
+}
+
+.costomers_voice_inner_item1 br,
+.costomers_voice_inner_item2 br {
+  display: none;
+}
+
+.section_title {
+  padding: 1.6rem 2.6rem;
+}
+/* download--------------------------- */
+#download {
+  padding-top: 2.5rem;
+}
+
+.download_txt {
+  
+  margin-bottom: 1.5rem;
+}
+
+.download_app,
+.download_google {
+  width: 31% ;
+}
+
+.download_logo_img {
+  width: 19%;
+  height: 10%
+}
+
+.download_store {
+  padding: unset;
+  padding-bottom: 3.7rem;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
