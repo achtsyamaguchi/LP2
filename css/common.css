@@ -485,6 +485,10 @@ header .drawer::after {
   top: 24px;
 }
 
+
+
+
+
  header .header_nav {
   position: fixed;
   width: 100%;
@@ -511,6 +515,8 @@ header .header_nav ul li a {
   display: block;
 }
 
+
+
   /*---×にする  */
   
 body.nav-open header .drawer {
@@ -526,7 +532,7 @@ body.nav-open header .drawer::after {
   top: 9px;
   transform: rotate(45deg);
 }
-
+/* ----------------------------------------------- */
 .main_page::before,
 .main_txt p,
 .arrow::after,
@@ -551,6 +557,15 @@ body.nav-open header .drawer::after {
     align-items: center;
   }
 
+  .main_visual {
+    width: 36%;
+  }
+
+.tb_wrapper .tb_sub_title::before {
+  width: 9rem;
+  height: 8rem;
+}
+/* explanarion------------------------------------ */
   .explanation_inner {
     display: block;
   }
@@ -558,7 +573,9 @@ body.nav-open header .drawer::after {
   .explanation_inner_img1,
   .explanation_inner_img2,
   .explanation_inner_img3{
+    width: 60%;
   margin-bottom: 23.5%;
+  margin: 0 auto;
   }
 
   .explanation_inner_img2,
@@ -581,6 +598,8 @@ body.nav-open header .drawer::after {
 
 .explanation_inner_img4,
 .explanation_inner_img5 {
+  width: 40%;
+  margin: 0 auto;
   margin-bottom: 13%;
 }
 
