@@ -1,5 +1,5 @@
 
-'use strict';
+
 window.onunload = function() {};
 function sizecheck() {
   w = window.innerWidth ? window.innerWidth : $(window).width();
